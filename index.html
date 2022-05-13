@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meta Vectors</title>
+    <script>
+      function setNewImage() {
+        var logo = document.getElementById("logo");
+        var logoDos = document.getElementById("logoDos");
+        logo.style.display = "none";
+        logo.style.transition = "2s ease-out";
+        logoDos.style.display = "flex";
+      }
+      function setOldImage() {
+        var logo = document.getElementById("logo");
+        var logoDos = document.getElementById("logoDos");
+        logo.style.display = "flex";
+        logo.style.transition = "2s ease-out";
+
+        logoDos.style.display = "none";
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="metaverso.jpg"
+        alt="logo"
+        onmouseenter="setNewImage()"
+        onmouseleave="setOldImage()"
+      />
+      <img
+        id="logoDos"
+        src="metaverso2.jpg"
+        alt="logo"
+        onmouseleave="setOldImage()"
+      />
+
+      <nav>
+        <ul class="nav_links">
+          <li><a href="#"> Collections </a></li>
+          <li><a href="#"> Games </a></li>
+          <li><a href="#"> Virtual world </a></li>
+          <li><a href="#"> Music </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="row">
+      <div class="text">
+        <h1>The World of NFT</h1>
+        <p>Creativity & Imagination</p>
+        <button class="btn">Get Started</button>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card img-uno">
+        <h5>Multiverso</h5>
+      </div>
+
+      <div class="card img-dos">
+        <h5>Bugambilia</h5>
+      </div>
+
+      <div class="card img-tres">
+        <h5>Redlandia</h5>
+      </div>
+
+      <div class="card img-cuatro">
+        <h5>Elon Musk</h5>
+      </div>
+    </div>
+  </body>
+</html>
